@@ -2,29 +2,693 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nearfood</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
   </head>
-  <body>
-    <!-- nav bar starts here -->
-    <div class="bg-orange-200">
-      <nav class="w-full h-20">
-        <div class="bg-slate-500">NearFood</div>
-        <ul>
-          <li>Home</li>
-          <li>Menu</li>
-          <li>Service</li>
-          <li>Contact us</li>
+  <body class="bg-yellow-50">
+    <nav
+      class="w-full h-10 mt-5 px-14 bg-orange-200 flex justify-between items-center"
+    >
+      <div class="flex items-center px-0">
+        <img src="/src/images/logo.png" alt="Logo" class="h-16 mr-1" />
+
+        <div class="font-bold" style="margin-left: -40px">Nearfood</div>
+      </div>
+
+      <div class="flex justify-center items-center">
+        <!-- List items -->
+        <ul class="flex space-x-8">
+          <li><a href="#" class="cursor-pointer text-xs">Home</a></li>
+          <li><a href="#" class="cursor-pointer text-xs">Menu</a></li>
+          <li><a href="#" class="cursor-pointer text-xs">Service</a></li>
+          <li><a href="#" class="cursor-pointer text-xs">Contact us</a></li>
         </ul>
-        <div>
-          <button></button>
-          <button></button>
-          <button>login</button>
+
+        <!-- Add a spacer -->
+        <div style="width: 35px"></div>
+
+        <!-- Buttons -->
+        <div class="flex space-x-8">
+          <button>
+            <a href="#"><i class="fas fa-search text-xs"></i></a>
+          </button>
+          <button>
+            <a href="#"><i class="fas fa-shopping-cart text-xs"></i></a>
+          </button>
+          <button>
+            <a href="#"><i class="fas fa-user text-xs"></i></a>
+          </button>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <section class="flex">
+      <div>
+        <h1 class="font-bold text-3xl text-green-800 mt-20 ml-24">
+          The Number #One <br />Choice Your <br />Hunger Solution
+        </h1>
+        <p class="text-xs font-bold mt-5 ml-24" style="font-size: 8px" ;>
+          The number one restaurant you are looking for to quench your<br />hunger
+          or just want to taste delicious things.
+        </p>
+        <div class="flex items-center ml-24 mt-3">
+          <button
+            class="bg-green-900 text-white m-2 h-7 w-24 text-xs p-1 rounded-full"
+          >
+            Order →
+          </button>
+          <button class="text-green-900 border rounded-full p-1 relative">
+            <i class="fas fa-play"></i>
+          </button>
+          <span id="span1" class="text-xs ml-2">How to order</span>
+        </div>
+        <h2 class="mt-5 ml-24 font-bold">Arnold Pramono</h2>
+        <h6 class="mt-0 text-xs ml-24">Chef</h6>
+        <p class="mt-2 text-xs ml-24 font-bold" style="font-size: 8px" ;>
+          The restaurant passed my quality test. There's no<br />
+          doubt about the taste. 100% recommended.
+        </p>
+      </div>
+      <div class="bg-yellow-400 ml-28 mt-10 w-96 rounded-xl">
+        <h6 class="text-xs font-bold ml-8 mt-5">Today's Choice</h6>
+        <h4 class="text-xl font-bold ml-8 mt-2">
+          American Special <br />Salad
+        </h4>
+        <div class="flex ml-72 -mt-20 gap-5">
+          <i class="fa-solid fa-circle-arrow-left text-2xl"></i>
+          <i class="fa-solid fa-circle-arrow-right text-2xl"></i>
+        </div>
+        <div class="flex gap-5 justify-center mt-32 ml-5">
+          <img
+            class="img1 w-48 h-48 rounded-lg -ml-5"
+            src="/src/images/1.png"
+            alt="img1"
+          />
+          <img
+            class="img2 w-48 h-48 rounded-lg"
+            src="/src/images/2.png"
+            alt="img2"
+          />
+        </div>
+        <button
+          class="bg-yellow-400 border border-green-700 text-green-700 h-7 ml-36 mb-5 rounded-full items-center w-24 text-xs"
+        >
+          Explore more
+        </button>
+      </div>
+    </section>
+    <section class="flex">
+      <div class="mt-20 ml-24">
+        <img
+          class="h-96 object-fill w-72 rounded-lg shadow-md"
+          src="/src/images/first.jpg"
+          alt="offer"
+        />
+      </div>
+      <div class="mt-20 ml-16">
+        <img
+          class="h-44 w-80 object-fill rounded-lg"
+          src="/src/images/Food Offer - Made with PosterMyWall.jpg"
+          alt="offer2"
+        />
+        <img
+          class="h-44 w-80 object-fill rounded-lg mt-2"
+          src="/src/images/fast-free-delivery-logo.jpg"
+          alt="food3"
+        />
+      </div>
+    </section>
+    <section class="text-center mt-20">
+      <h6 class="font-bold text-xs">Service</h6>
+      <h3 class="mt-2 text-lg font-bold">
+        What We Serve Besides<span class="delicious"></span><br />Delicious Food
+      </h3>
+      <p class="mt-2 font-bold" style="font-size: 8px" ;>
+        Our creative, elevated food and beverage program combines satisfying
+        staples with imaginative<br />twists.From boozy brunches and happy hours
+        to family dinners,special occasions and everything in <br />between,The
+        original has something for everyone.
+      </p>
+    </section>
+    <section class="flex justify-center items-center mt-6 space-x-16 p-4">
+      <div class="text-center">
+        <img
+          src="/src/images/delievery.jpg"
+          alt="Fast Delivery"
+          class="h-24 w-24 rounded-full mx-auto"
+        />
+        <span class="text-xs font-bold">Fast Delivery</span>
+      </div>
+      <div class="text-center">
+        <img
+          src="/src/images/easy-to-.jpg"
+          alt="Easy to Order"
+          class="h-24 w-24 rounded-full mx-auto mb-2"
+        />
+        <span class="text-xs font-bold">Easy to Order</span>
+      </div>
+      <div class="text-center">
+        <img
+          src="/src/images/freshing.jpg"
+          alt="Fresh Ingredients"
+          class="h-24 w-24 rounded-full mx-auto mb-2"
+        />
+        <span class="text-xs font-bold">Fresh Ingredients</span>
+      </div>
+      <div class="text-center">
+        <img
+          src="/src/images/enjoying1.jpg"
+          alt="Affordable Price"
+          class="h-24 w-24 rounded-full mx-auto mb-2"
+        />
+        <span class="text-xs font-bold">Affordable Price</span>
+      </div>
+    </section>
+    <section class="text-center mt-16">
+      <h6 class="font-bold text-xs">Menu</h6>
+      <h3 class="mt-2 text-lg font-bold">What are you craving of?</h3>
+      <div class="flex mt-6 ml-24">
+        <button
+          class="border border-green-900 m-2 h-7 text-xs w-16 mb-2 p-1 rounded-full"
+        >
+          <i class="fas fa-search text-green-900"></i>
+        </button>
+        <div class="h-7 border-l-2 border-green-900 mt-2"></div>
+        <button
+          class="bg-green-900 text-white m-2 h-7 w-20 text-xs p-1 rounded-full"
+        >
+          All
+        </button>
+
+        <button
+          class="border border-green-900 text-green-900 m-2 h-7 w-24 text-xs p-1 rounded-full"
+        >
+          Appetizer
+        </button>
+
+        <!-- 4th Button: Beef -->
+        <button
+          class="border border-green-900 text-green-900 m-2 h-7 w-16 text-xs p-1 rounded-full"
+        >
+          Beef
+        </button>
+
+        <!-- 5th Button: Chicken -->
+        <button
+          class="border border-green-900 text-green-900 m-2 h-7 w-24 text-xs p-1 rounded-full"
+        >
+          Chicken
+        </button>
+
+        <!-- 6th Button: Fish -->
+        <button
+          class="border border-green-900 text-green-900 m-2 h-7 w-16 text-xs p-1 rounded-full"
+        >
+          Fish
+        </button>
+
+        <!-- 7th Button: Dessert -->
+        <button
+          class="border border-green-900 text-green-900 border-solid m-2 h-7 w-24 text-xs p-1 rounded-full"
+        >
+          Dessert
+        </button>
+        <button
+          class="border border-green-900 text-green-900 border-solid m-2 h-7 w-24 text-xs p-1 rounded-full"
+        >
+          Beverage
+        </button>
+      </div>
+    </section>
+    <section class="mt-10 ml-20 flex">
+      <div class="flex">
+        <div class="mt-2 ml-2 w-64">
+          <img
+            class="h-64 object-fill w-72 rounded-lg shadow-md"
+            src="/src/images/spl/Today-spec.jpg"
+            alt="offer"
+          />
+        </div>
+        <div class="mt-2 flex flex-wrap nowrap ml-1">
+          <!-- 1st -->
+          <div
+            class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
+            style="width: 200px"
+          >
+            <div>
+              <img
+                class="h-14 w-14 rounded-xl"
+                src="/src/images/spl/spl-salad.jpg"
+                alt="spl-salad"
+              />
+            </div>
+            <div class="text-xs font-bold">
+              <div>American Special</div>
+              <div>Salad</div>
+              <div class="mt-1">$13</div>
+            </div>
+            <button class="rounded-full">
+              <i class="fas fa-plus-circle"></i>
+            </button>
+          </div>
+          <!-- 2nd -->
+          <div
+            class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
+            style="width: 200px"
+          >
+            <div>
+              <img
+                class="h-14 w-14 rounded-xl"
+                src="/src/images/spl/spl-salad.jpg"
+                alt="spl-salad"
+              />
+            </div>
+            <div class="text-xs font-bold">
+              <div>American Special</div>
+              <div>Salad</div>
+              <div class="mt-1">$13</div>
+            </div>
+            <button class="rounded-full">
+              <i class="fas fa-plus-circle"></i>
+            </button>
+          </div>
+
+          <!-- 3rd -->
+          <div
+            class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
+            style="width: 200px"
+          >
+            <div>
+              <img
+                class="h-14 w-14 rounded-xl"
+                src="/src/images/spl/spl-salad.jpg"
+                alt="spl-salad"
+              />
+            </div>
+            <div class="text-xs font-bold">
+              <div>American Special</div>
+              <div>Salad</div>
+              <div class="mt-1">$13</div>
+            </div>
+            <button class="rounded-full">
+              <i class="fas fa-plus-circle"></i>
+            </button>
+          </div>
+          <!-- 3rd -->
+        </div>
+        <!-- two@ -->
+        <div class="flex -ml-12">
+          <div class="mt-2 flex flex-wrap nowrap">
+            <!-- 1st -->
+            <div
+              class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
+              style="width: 200px"
+            >
+              <div>
+                <img
+                  class="h-14 w-14 rounded-xl"
+                  src="/src/images/spl/spl-salad.jpg"
+                  alt="spl-salad"
+                />
+              </div>
+              <div class="text-xs font-bold">
+                <div>American Special</div>
+                <div>Salad</div>
+                <div class="mt-1">$13</div>
+              </div>
+              <button class="rounded-full">
+                <i class="fas fa-plus-circle"></i>
+              </button>
+            </div>
+            <!-- 2nd -->
+            <div
+              class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
+              style="width: 200px"
+            >
+              <div>
+                <img
+                  class="h-14 w-14 rounded-xl"
+                  src="/src/images/spl/spl-salad.jpg"
+                  alt="spl-salad"
+                />
+              </div>
+              <div class="text-xs font-bold">
+                <div>American Special</div>
+                <div>Salad</div>
+                <div class="mt-1">$13</div>
+              </div>
+              <button class="rounded-full">
+                <i class="fas fa-plus-circle"></i>
+              </button>
+            </div>
+
+            <!-- 3rd -->
+            <div
+              class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
+              style="width: 200px"
+            >
+              <div>
+                <img
+                  class="h-14 w-14 rounded-xl"
+                  src="/src/images/spl/spl-salad.jpg"
+                  alt="spl-salad"
+                />
+              </div>
+              <div class="text-xs font-bold">
+                <div>American Special</div>
+                <div>Salad</div>
+                <div class="mt-1">$13</div>
+              </div>
+              <button class="rounded-full">
+                <i class="fas fa-plus-circle"></i>
+              </button>
+            </div>
+            <!-- 3rd -->
+          </div>
+        </div>
+        <!-- threee -->
+        <div class="flex -ml-12">
+          <div class="mt-2 flex flex-wrap nowrap">
+            <!-- 1st -->
+            <div
+              class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
+              style="width: 200px"
+            >
+              <div>
+                <img
+                  class="h-14 w-14 rounded-xl"
+                  src="/src/images/spl/spl-salad.jpg"
+                  alt="spl-salad"
+                />
+              </div>
+              <div class="text-xs font-bold">
+                <div>American Special</div>
+                <div>Salad</div>
+                <div class="mt-1">$13</div>
+              </div>
+              <button class="rounded-full">
+                <i class="fas fa-plus-circle"></i>
+              </button>
+            </div>
+            <!-- 2nd -->
+            <div
+              class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
+              style="width: 200px"
+            >
+              <div>
+                <img
+                  class="h-14 w-14 rounded-xl"
+                  src="/src/images/spl/spl-salad.jpg"
+                  alt="spl-salad"
+                />
+              </div>
+              <div class="text-xs font-bold">
+                <div>American Special</div>
+                <div>Salad</div>
+                <div class="mt-1">$13</div>
+              </div>
+              <button class="rounded-full">
+                <i class="fas fa-plus-circle"></i>
+              </button>
+            </div>
+
+            <!-- 3rd -->
+            <div
+              class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
+              style="width: 200px"
+            >
+              <div>
+                <img
+                  class="h-14 w-14 rounded-xl"
+                  src="/src/images/spl/spl-salad.jpg"
+                  alt="spl-salad"
+                />
+              </div>
+              <div class="text-xs font-bold">
+                <div>American Special</div>
+                <div>Salad</div>
+                <div class="mt-1">$13</div>
+              </div>
+              <button class="rounded-full">
+                <i class="fas fa-plus-circle"></i>
+              </button>
+            </div>
+            <!-- 3rd -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="flex justify-center items-center mt-8 px-72">
+      <div
+        class="w-full max-w-5xl h-2 bg-gray-300 rounded-full relative overflow-hidden"
+      >
+        <div class="absolute h-full bg-green-800" style="width: 10%"></div>
+      </div>
     </div>
-    <script type="module" src="/src/js/main.js"></script>
+
+    <section class="text-center mt-20">
+      <h6 class="font-bold text-xs">Testimonials</h6>
+      <h3 class="mt-2 text-lg font-bold">
+        Let's hear some<span class="delicious"></span><br />satisfactions
+      </h3>
+      <p class="mt-2 font-bold" style="font-size: 8px" ;>
+        The number one restaurant you are looking for to quench your hunger or
+        jsut want<br />to taste delicious things.
+      </p>
+    </section>
+    <section class="mt-10 px-4 ml-20">
+      <div class="flex flex-wrap justify-between">
+        <!-- First Column -->
+        <div class="w-full md:w-1/2 p-4">
+          <!-- Testimonial 1 -->
+          <div class="flex items-center rounded-lg p-4 mb-4">
+            <img
+              class="w-16 h-16 rounded-full mr-4"
+              src="/src/images/testimony/person1.jpg"
+              alt="Person 1"
+            />
+            <div>
+              <h4 class="text-lg font-bold">Hannah Hart</h4>
+              <div>Food Vlogger</div>
+              <p
+                class="text-sm text-black-600 leading-snug"
+                style="font-size: 10px"
+                ;
+              >
+                The food was exceptional and the service really professional.
+                Pasta with shrimps was truly tasty.
+              </p>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="flex items-center rounded-lg p-4">
+            <img
+              class="w-16 h-16 rounded-full mr-4"
+              src="/src/images/testimony/person2.jpg"
+              alt="Person 2"
+            />
+            <div>
+              <h4 class="text-lg font-bold">Katie Horan</h4>
+              <div>Chef</div>
+              <p
+                class="text-sm black-600 leading-snug"
+                style="font-size: 10px"
+                ;
+              >
+                Really enjoyed our entire meal from start to finish.We opted for
+                a three course brunch.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Second Column -->
+        <div class="w-full md:w-1/2 p-4">
+          <!-- Testimonial 3 -->
+          <div class="flex items-center rounded-lg p-4 mb-4">
+            <img
+              class="w-16 h-16 rounded-full mr-4"
+              src="/src/images/testimony/person4.jpg"
+              alt="Person 3"
+            />
+            <div>
+              <h4 class="text-lg font-bold">Sam Ozkural</h4>
+              <div>Food Vlogger</div>
+              <p
+                class="text-sm text-black-600 leading-snug"
+                style="font-size: 10px"
+                ;
+              >
+                The best Wellington is to die for! Their pastry chef is the most
+                amazing talent we've ever seen!.
+              </p>
+            </div>
+          </div>
+          <!-- Testimonial 4 -->
+          <div class="flex items-center rounded-lg p-4">
+            <img
+              class="w-16 h-16 rounded-full mr-4"
+              src="/src/images/testimony/person3.jpg"
+              alt="Person 4"
+            />
+            <div>
+              <h4 class="text-lg font-bold">Raechel Green</h4>
+              <div>Chef</div>
+              <p
+                class="text-sm text-black-600 leading snug"
+                style="font-size: 10px"
+                ;
+              >
+                Excellent quality of food. Good adult portions and very large
+                kids portions. Salmon,steak,shrimp were all excellent.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-0 text-center">
+      <div>
+        <img
+          src="/src/images/testimony/list-more.png"
+          class="h-14 mx-auto rounded-full"
+          alt="Icon"
+        />
+      </div>
+    </section>
+    <section class="mt-5 flex">
+      <div class="bg-yellow-400 w-full h-60">
+        <div class="ml-16 mt-10">
+          <h6 class="font-bold text-xs">Outlet</h6>
+          <h1 class="font-bold">Find Us Near You</h1>
+          <p class="tex-black font-bold mt-4" style="font-size: 8px" ;>
+            The no.1 restaurant you are looking for to quench your <br />
+            hunger or just want to taste delicious things.
+          </p>
+        </div>
+        <button
+          class="bg-green-900 text-white m-2 h-7 w-36 text-xs p-1 rounded-full ml-16 mt-5"
+        >
+          Explore Outlets →
+        </button>
+      </div>
+      <div></div>
+    </section>
+    <footer class="bg-green-800 text-white py-16">
+      <div class="flex items-center px-0 ml-8">
+        <img src="/src/images/logo.png" alt="Logo" class="h-16 mr-1" />
+        <div class="font-bold" style="margin-left: -40px">Nearfood</div>
+      </div>
+      <div class="container mx-auto flex justify-between px-4 ml-10 -mt-8">
+        <div
+          class="w-full md:w-1/3 px-4 flex flex-col items-center md:items-start"
+        >
+          <div class="text-xs font-bold mb-2 mt-5"></div>
+          <p class="text-xs mb-6">
+            Nearfood offers expert guidance on all aspects of your dining
+            experience so you can feel confident in your decision.
+          </p>
+          <h3 class="text-xs font-bold mb-2">Follow Us On</h3>
+          <ul class="flex space-x-4">
+            <li>
+              <a href="#" class="text-white hover:text-gray-200"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-200"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-200"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="ml-6">
+          <h3 class="text-lg font-bold mb-4">Useful Links</h3>
+          <ul class="list-none space-y-2">
+            <li class="text-xs">
+              <a href="#" class="text-white hover:text-gray-200"
+                ><i class="fas fa-chevron-right mr-2"></i> About Us</a
+              >
+            </li>
+            <li class="text-xs">
+              <a href="#" class="text-white hover:text-gray-200"
+                ><i class="fas fa-chevron-right mr-2"></i> How We Work</a
+              >
+            </li>
+            <li class="text-xs">
+              <a href="#" class="text-white hover:text-gray-200"
+                ><i class="fas fa-chevron-right mr-2"></i> Terms & Conditions</a
+              >
+            </li>
+            <li class="text-xs">
+              <a href="#" class="text-white hover:text-gray-200"
+                ><i class="fas fa-chevron-right mr-2"></i> FAQ</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="ml-3">
+          <h3 class="text-lg font-bold mb-4">Content</h3>
+          <ul class="list-none space-y-2">
+            <li class="text-xs">
+              <a href="#" class="text-white hover:text-gray-200"
+                ><i class="fas fa-chevron-right mr-2"></i> Home</a
+              >
+            </li>
+            <li class="text-xs">
+              <a href="#" class="text-white hover:text-gray-200"
+                ><i class="fas fa-chevron-right mr-2"></i> Browse Menu</a
+              >
+            </li>
+            <li class="text-xs">
+              <a href="#" class="text-white hover:text-gray-200"
+                ><i class="fas fa-chevron-right mr-2"></i> Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="px-4 text-center md:text-left">
+          <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+          <ul class="list-none space-y-2">
+            <li class="text-xs">
+              <a
+                href="nearfood@gmail.com"
+                class="text-white hover:text-gray-200"
+                ><i class="fas fa-chevron-right mr-2"></i> nearfood@gmail.com</a
+              >
+            </li>
+            <li class="text-xs">
+              <a href="tel:021-123-456" class="text-white hover:text-gray-200"
+                ><i class="fas fa-chevron-right mr-2"></i> 021-123-456</a
+              >
+            </li>
+            <li class="text-xs">
+              <a href="#" class="text-white hover:text-gray-200"
+                ><i class="fas fa-chevron-right mr-2"></i> Social Media</a
+              >
+            </li>
+            <li class="text-xs">
+              <a href="#" class="text-white hover:text-gray-200"
+                ><i class="fas fa-chevron-right mr-2"></i> Unsubscribe Mail</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
