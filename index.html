@@ -13,6 +13,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="src/css/tailwindcss/base.css" />
+    <link rel="stylesheet" href="src/css/tailwindcss/components.css" />
+    <link rel="stylesheet" href="src/css/tailwindcss/utilities.css" />
   </head>
   <body class="bg-yellow-50">
     <nav
@@ -24,20 +27,18 @@
         <div class="font-bold" style="margin-left: -40px">Nearfood</div>
       </div>
 
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center ">
         <!-- List items -->
-        <ul class="flex space-x-8">
+        <ul class="flex space-x-8 lg:hidden">
           <li><a href="#" class="cursor-pointer text-xs">Home</a></li>
           <li><a href="#" class="cursor-pointer text-xs">Menu</a></li>
           <li><a href="#" class="cursor-pointer text-xs">Service</a></li>
           <li><a href="#" class="cursor-pointer text-xs">Contact us</a></li>
         </ul>
-
-        <!-- Add a spacer -->
-        <div style="width: 35px"></div>
+        <div class="w-8"></div>
 
         <!-- Buttons -->
-        <div class="flex space-x-8">
+        <div class="flex space-x-8 ">
           <button>
             <a href="#"><i class="fas fa-search text-xs"></i></a>
           </button>
@@ -65,7 +66,7 @@
           >
             Order →
           </button>
-          <button class="text-green-900 border rounded-full p-1 relative">
+          <button class="text-green-900 border  rounded-full border-green-900 p-1 relative">
             <i class="fas fa-play"></i>
           </button>
           <span id="span1" class="text-xs ml-2">How to order</span>
@@ -86,16 +87,21 @@
           <i class="fa-solid fa-circle-arrow-left text-2xl"></i>
           <i class="fa-solid fa-circle-arrow-right text-2xl"></i>
         </div>
-        <div class="flex gap-5 justify-center mt-32 ml-5">
+        <div class="relative flex gap-5 justify-center mt-32 ml-5">
           <img
-            class="img1 w-48 h-48 rounded-lg -ml-5"
-            src="/src/images/1.png"
+            class="img1 w-48 h-48 rounded ml-16 -mt-24 z-20"
+            src="/src/images/2start-removebg-preview.png"
             alt="img1"
           />
           <img
-            class="img2 w-48 h-48 rounded-lg"
-            src="/src/images/2.png"
+            class="img1 w-48 h-48 rounded-lg -ml-72 z-10"
+            src="/src/images/1.png"
             alt="img2"
+          />
+          <img
+            class="img2 w-48 h-48 rounded-lg mr-5 z-10"
+            src="/src/images/2.png"
+            alt="img3"
           />
         </div>
         <button
@@ -108,7 +114,7 @@
     <section class="flex">
       <div class="mt-20 ml-24">
         <img
-          class="h-96 object-fill w-72 rounded-lg shadow-md"
+          class="h-96  w-72 rounded-lg shadow-md"
           src="/src/images/first.jpg"
           alt="offer"
         />
@@ -193,29 +199,23 @@
         >
           Appetizer
         </button>
-
-        <!-- 4th Button: Beef -->
         <button
           class="border border-green-900 text-green-900 m-2 h-7 w-16 text-xs p-1 rounded-full"
         >
           Beef
         </button>
 
-        <!-- 5th Button: Chicken -->
         <button
           class="border border-green-900 text-green-900 m-2 h-7 w-24 text-xs p-1 rounded-full"
         >
           Chicken
         </button>
 
-        <!-- 6th Button: Fish -->
         <button
           class="border border-green-900 text-green-900 m-2 h-7 w-16 text-xs p-1 rounded-full"
         >
           Fish
         </button>
-
-        <!-- 7th Button: Dessert -->
         <button
           class="border border-green-900 text-green-900 border-solid m-2 h-7 w-24 text-xs p-1 rounded-full"
         >
@@ -230,218 +230,227 @@
     </section>
     <section class="mt-10 ml-20 flex">
       <div class="flex">
-        <div class="mt-2 ml-2 w-64">
+        <div class="mt-2 ml-2">
           <img
-            class="h-64 object-fill w-72 rounded-lg shadow-md"
+            class="h-64 object-fill w-96 rounded-lg shadow-md"
             src="/src/images/spl/Today-spec.jpg"
             alt="offer"
           />
         </div>
-        <div class="mt-2 flex flex-wrap nowrap ml-1">
+        <div class="mt-2 flex flex-wrap ml-2 w-min">
           <!-- 1st -->
           <div
-            class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
-            style="width: 200px"
+            class="p-2 h-20 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-2 ml-4 w-48"
           >
-            <div>
+            <div class="max-w-max">
               <img
-                class="h-14 w-14 rounded-xl"
+                class="h-16 w-16 rounded-xl"
                 src="/src/images/spl/spl-salad.jpg"
                 alt="spl-salad"
               />
             </div>
-            <div class="text-xs font-bold">
-              <div>American Special</div>
-              <div>Salad</div>
-              <div class="mt-1">$13</div>
+            <div class="flex flex-col justify-between h-full text-xs font-bold">
+              <div class="w-16">Special Salad</div>
+             
+              <div>$13</div>
             </div>
-            <button class="rounded-full">
-              <i class="fas fa-plus-circle"></i>
-            </button>
-          </div>
-          <!-- 2nd -->
-          <div
-            class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
-            style="width: 200px"
-          >
-            <div>
-              <img
-                class="h-14 w-14 rounded-xl"
-                src="/src/images/spl/spl-salad.jpg"
-                alt="spl-salad"
-              />
-            </div>
-            <div class="text-xs font-bold">
-              <div>American Special</div>
-              <div>Salad</div>
-              <div class="mt-1">$13</div>
-            </div>
-            <button class="rounded-full">
-              <i class="fas fa-plus-circle"></i>
+            <button
+              class="flex items-center justify-center w-6 h-6 rounded-full bg-green-900 -ml-12 -mb-8"
+            >
+              <i class="fas fa-plus text-white text-sm"></i>
             </button>
           </div>
 
+          <!-- 2nd -->
+          <div
+          class="p-2 h-20 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-2 ml-4 w-48"
+        >
+          <div class="max-w-max">
+            <img
+              class="h-16 w-16 rounded-xl"
+              src="/src/images/spl/Ramen.jpg"
+              alt="spl-salad"
+            />
+          </div>
+          <div class="flex flex-col justify-between h-full text-xs font-bold">
+            <div class="w-16">Madura-Satai</div>
+           <div class="mb-7">$18</div>
+          </div>
+          <button
+            class="flex items-center justify-center w-6 h-6 rounded-full bg-green-900 -ml-12 -mb-8"
+          >
+            <i class="fas fa-plus text-white text-sm"></i>
+          </button>
+        </div>
+
           <!-- 3rd -->
           <div
-            class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
-            style="width: 200px"
-          >
-            <div>
-              <img
-                class="h-14 w-14 rounded-xl"
-                src="/src/images/spl/spl-salad.jpg"
-                alt="spl-salad"
-              />
-            </div>
-            <div class="text-xs font-bold">
-              <div>American Special</div>
-              <div>Salad</div>
-              <div class="mt-1">$13</div>
-            </div>
-            <button class="rounded-full">
-              <i class="fas fa-plus-circle"></i>
-            </button>
+          class="p-2 h-20 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-2 ml-4 w-48"
+        >
+          <div class="max-w-max">
+            <img
+              class="h-16 w-16 rounded-xl"
+              src="/src/images/spl/madu-sata.jpg"
+              alt="spl-salad"
+            />
           </div>
+          <div class="flex flex-col justify-between h-full text-xs font-bold">
+            <div class="w-16">Ramen</div>
+            
+            <div class="mb-6">$13</div>
+          </div>
+          <button
+            class="flex items-center justify-center w-6 h-6 rounded-full bg-green-900 -ml-12 -mb-8"
+          >
+            <i class="fas fa-plus text-white text-sm"></i>
+          </button>
+        </div>
           <!-- 3rd -->
         </div>
         <!-- two@ -->
-        <div class="flex -ml-12">
-          <div class="mt-2 flex flex-wrap nowrap">
-            <!-- 1st -->
-            <div
-              class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
-              style="width: 200px"
-            >
-              <div>
-                <img
-                  class="h-14 w-14 rounded-xl"
-                  src="/src/images/spl/spl-salad.jpg"
-                  alt="spl-salad"
-                />
-              </div>
-              <div class="text-xs font-bold">
-                <div>American Special</div>
-                <div>Salad</div>
-                <div class="mt-1">$13</div>
-              </div>
-              <button class="rounded-full">
-                <i class="fas fa-plus-circle"></i>
-              </button>
+        <div class="mt-2 flex flex-wrap ml-2 w-min">
+          <!-- 1st -->
+          <div
+            class="p-2 h-20 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-2 ml-4 w-48"
+          >
+            <div class="max-w-max">
+              <img
+                class="h-16 w-16 rounded-xl"
+                src="/src/images/spl/egg-bread.jpg"
+                alt="spl-salad"
+              />
             </div>
-            <!-- 2nd -->
-            <div
-              class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
-              style="width: 200px"
-            >
-              <div>
-                <img
-                  class="h-14 w-14 rounded-xl"
-                  src="/src/images/spl/spl-salad.jpg"
-                  alt="spl-salad"
-                />
-              </div>
-              <div class="text-xs font-bold">
-                <div>American Special</div>
-                <div>Salad</div>
-                <div class="mt-1">$13</div>
-              </div>
-              <button class="rounded-full">
-                <i class="fas fa-plus-circle"></i>
-              </button>
+            <div class="flex flex-col justify-between h-full text-xs font-bold">
+              <div class="w-16">Egg-Bread</div>
+      
+              <div class="mb-6">$13</div>
             </div>
-
-            <!-- 3rd -->
-            <div
-              class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
-              style="width: 200px"
+            <button
+              class="flex items-center justify-center w-6 h-6 rounded-full bg-green-900 -ml-12 -mb-8"
             >
-              <div>
-                <img
-                  class="h-14 w-14 rounded-xl"
-                  src="/src/images/spl/spl-salad.jpg"
-                  alt="spl-salad"
-                />
-              </div>
-              <div class="text-xs font-bold">
-                <div>American Special</div>
-                <div>Salad</div>
-                <div class="mt-1">$13</div>
-              </div>
-              <button class="rounded-full">
-                <i class="fas fa-plus-circle"></i>
-              </button>
-            </div>
-            <!-- 3rd -->
+              <i class="fas fa-plus text-white text-sm"></i>
+            </button>
           </div>
-        </div>
-        <!-- threee -->
-        <div class="flex -ml-12">
-          <div class="mt-2 flex flex-wrap nowrap">
-            <!-- 1st -->
-            <div
-              class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
-              style="width: 200px"
-            >
-              <div>
-                <img
-                  class="h-14 w-14 rounded-xl"
-                  src="/src/images/spl/spl-salad.jpg"
-                  alt="spl-salad"
-                />
-              </div>
-              <div class="text-xs font-bold">
-                <div>American Special</div>
-                <div>Salad</div>
-                <div class="mt-1">$13</div>
-              </div>
-              <button class="rounded-full">
-                <i class="fas fa-plus-circle"></i>
-              </button>
-            </div>
-            <!-- 2nd -->
-            <div
-              class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
-              style="width: 200px"
-            >
-              <div>
-                <img
-                  class="h-14 w-14 rounded-xl"
-                  src="/src/images/spl/spl-salad.jpg"
-                  alt="spl-salad"
-                />
-              </div>
-              <div class="text-xs font-bold">
-                <div>American Special</div>
-                <div>Salad</div>
-                <div class="mt-1">$13</div>
-              </div>
-              <button class="rounded-full">
-                <i class="fas fa-plus-circle"></i>
-              </button>
-            </div>
 
-            <!-- 3rd -->
-            <div
-              class="p-6 h-20 mx-auto bg-white-300 rounded-xl shadow-lg flex items-center space-x-2 ml-4"
-              style="width: 200px"
-            >
-              <div>
-                <img
-                  class="h-14 w-14 rounded-xl"
-                  src="/src/images/spl/spl-salad.jpg"
-                  alt="spl-salad"
-                />
-              </div>
-              <div class="text-xs font-bold">
-                <div>American Special</div>
-                <div>Salad</div>
-                <div class="mt-1">$13</div>
-              </div>
-              <button class="rounded-full">
-                <i class="fas fa-plus-circle"></i>
-              </button>
+          <!-- 2nd -->
+          <div
+          class="p-2 h-20 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-2 ml-4 w-48"
+        >
+          <div class="max-w-max">
+            <img
+              class="h-16 w-16 rounded-xl"
+              src="/src/images/spl/amer-spl-burg.jpg"
+              alt="spl-salad"
+            />
+          </div>
+          <div class="flex flex-col justify-between h-full text-xs font-bold">
+            <div class="w-16">Special-burger</div>
+            
+            <div class="mb-6">$13</div>
+          </div>
+          <button
+            class="flex items-center justify-center w-6 h-6 rounded-full bg-green-900 -ml-12 -mb-8"
+          >
+            <i class="fas fa-plus text-white text-sm"></i>
+          </button>
+        </div>
+
+          <!-- 3rd -->
+          <div
+          class="p-2 h-20 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-2 ml-4 w-48"
+        >
+          <div class="max-w-max">
+            <img
+              class="h-16 w-16 rounded-xl"
+              src="/src/images/spl/black-pap.jpg"
+              alt="spl-salad"
+            />
+          </div>
+          <div class="flex flex-col justify-between h-full text-xs font-bold">
+            <div class="w-16">Black-pep Burger</div>
+            <div class="mb-6">$13</div>
+          </div>
+          <button
+            class="flex items-center justify-center w-6 h-6 rounded-full bg-green-900 -ml-12 -mb-8"
+          >
+            <i class="fas fa-plus text-white text-sm"></i>
+          </button>
+        </div>
+          <!-- 3rd -->
+        </div>
+        <div class="mt-2 flex flex-wrap ml-2 w-min">
+          <!-- 1st -->
+          <div
+            class="p-2 h-20 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-2 ml-4 w-48"
+          >
+            <div class="max-w-max">
+              <img
+                class="h-16 w-16 rounded-xl"
+                src="/src/images/pexels-dana-tentis-118658-1213710.jpg"
+                alt="spl-salad"
+              />
             </div>
-            <!-- 3rd -->
+            <div class="flex flex-col justify-between h-full text-xs font-bold">
+              <div class="w-16">Soup</div>
+              
+              <div class="mb-6">$13</div>
+            </div>
+            <button
+              class="flex items-center justify-center w-6 h-6 rounded-full bg-green-900 -ml-12 -mb-8"
+            >
+              <i class="fas fa-plus text-white text-sm"></i>
+            </button>
+          </div>
+
+          <!-- 2nd -->
+          <div
+          class="p-2 h-20 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-2 ml-4 w-48"
+        >
+          <div class="max-w-max">
+            <img
+              class="h-16 w-16 rounded-xl"
+              src="/src/images/pexels-iina-luoto-460132-1211887.jpg"
+              alt="spl-salad"
+            />
+          </div>
+          <div class="flex flex-col justify-between h-full text-xs font-bold">
+            <div class="w-16">Cherry-Spl</div>
+            
+            <div class="mb-6">$13</div>
+          </div>
+          <button
+            class="flex items-center justify-center w-6 h-6 rounded-full bg-green-900 -ml-12 -mb-8"
+          >
+            <i class="fas fa-plus text-white text-sm"></i>
+          </button>
+        </div>
+
+          <!-- 3rd -->
+          <div
+          class="p-2 h-20 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-2 ml-4 w-48"
+        >
+          <div class="max-w-max">
+            <img
+              class="h-16 w-16 rounded-xl"
+              src="/src/images/pexels-fotios-photos-1279330.jpg"
+              alt="spl-salad"
+            />
+          </div>
+          <div class="flex flex-col justify-between h-full text-xs font-bold">
+            <div class="w-16">Hakka-Noddles</div>
+           
+            <div class="mb-6">$13</div>
+          </div>
+          <button
+            class="flex items-center justify-center w-6 h-6 rounded-full bg-green-900 -ml-12 -mb-8"
+          >
+            <i class="fas fa-plus text-white text-sm"></i>
+          </button>
+        </div>
+          <!-- 3rd -->
+        </div>
+            
+            </div>
           </div>
         </div>
       </div>
@@ -466,9 +475,9 @@
     </section>
     <section class="mt-10 px-4 ml-20">
       <div class="flex flex-wrap justify-between">
-        <!-- First Column -->
+       
         <div class="w-full md:w-1/2 p-4">
-          <!-- Testimonial 1 -->
+          
           <div class="flex items-center rounded-lg p-4 mb-4">
             <img
               class="w-16 h-16 rounded-full mr-4"
@@ -488,7 +497,7 @@
               </p>
             </div>
           </div>
-          <!-- Testimonial 2 -->
+         
           <div class="flex items-center rounded-lg p-4">
             <img
               class="w-16 h-16 rounded-full mr-4"
@@ -509,9 +518,7 @@
             </div>
           </div>
         </div>
-        <!-- Second Column -->
         <div class="w-full md:w-1/2 p-4">
-          <!-- Testimonial 3 -->
           <div class="flex items-center rounded-lg p-4 mb-4">
             <img
               class="w-16 h-16 rounded-full mr-4"
@@ -531,7 +538,6 @@
               </p>
             </div>
           </div>
-          <!-- Testimonial 4 -->
           <div class="flex items-center rounded-lg p-4">
             <img
               class="w-16 h-16 rounded-full mr-4"
@@ -588,7 +594,7 @@
       </div>
       <div class="container mx-auto flex justify-between px-4 ml-10 -mt-8">
         <div
-          class="w-full md:w-1/3 px-4 flex flex-col items-center md:items-start"
+          class="w-full md:w-1/3 px-4 flex flex-col items-center md:items-start sm:items-center"
         >
           <div class="text-xs font-bold mb-2 mt-5"></div>
           <p class="text-xs mb-6">
@@ -661,7 +667,7 @@
           </ul>
         </div>
 
-        <div class="px-4 text-center md:text-left">
+        <div class="px-4 text-center md:text-left sm:text-bottom">
           <h3 class="text-lg font-bold mb-4">Contact Us</h3>
           <ul class="list-none space-y-2">
             <li class="text-xs">
@@ -683,8 +689,8 @@
             </li>
             <li class="text-xs">
               <a href="#" class="text-white hover:text-gray-200"
-                ><i class="fas fa-chevron-right mr-2"></i> Unsubscribe Mail</a
-              >
+                ><i class="fas fa-chevron-right mr-2"></i> Unsubscribe mail
+              </a>
             </li>
           </ul>
         </div>
