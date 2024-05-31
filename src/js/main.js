@@ -1,3 +1,3 @@
 // import "../css/style.css";
-let name = "manish";
-console.log(cam);
+let Name = "manish";
+console.log(Name);
